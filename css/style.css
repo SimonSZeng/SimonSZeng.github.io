@@ -1,0 +1,446 @@
+html, body{
+	padding: 0;
+	margin: 0;
+	font-family: "Open Sans", Garamond, "Adobe Garamond Pro", "Hoefler Text", Georgia, serif;
+	overflow-x:hidden;
+}
+
+@media screen and (min-width: 1350px){
+	.section_header{
+		width: 75%;
+	}
+	.content{
+		width: 55%;
+		margin: auto;
+	}
+	p{
+		font-size: 1.5em;
+	}
+}
+
+@media screen and (min-width: 1150px) and (max-width: 1350px){
+	.section_header{
+		width: 80%;
+	}
+	.content{
+		width: 75%;
+		margin: auto;
+	}
+	p{
+		font-size: 1.2em;
+	}
+}
+
+@media screen and (min-width: 800px) and (max-width: 1150px){
+	.section_header{
+		width: 85%;
+	}
+	.content{
+		width: 80%;
+		margin: auto;
+	}
+	p{
+		font-size: 1.2em;
+	}
+}
+
+@media screen and (min-width: 550px) and (max-width: 800px){
+	.section_header{
+		width: 85%;
+	}
+	.content{
+		width: 85%;
+		margin: auto;
+	}
+	p{
+		font-size: 1.2em;
+	}
+}
+
+@media screen and (min-width: 450px) and (max-width: 550px){
+	.section_header{
+		width: 85%;
+	}
+	.content{
+		width: 85%;
+		margin: auto;
+	}
+	p{
+		font-size: 1.1em;
+	}
+}
+
+@media (max-width: 450px){
+	.section_header{
+		width: 85%;
+	}
+	.content{
+		width: 85%;
+		margin: auto;
+	}
+	p{
+		font-size: 1em;
+	}
+}
+
+.section_header{
+	margin: auto;
+	padding-top: 50px;
+}
+
+.section_image{
+	display: block;
+	margin: auto;
+}
+
+.line_break{
+	height: 2px;
+	width: 75px;
+	background-color: #23c4eb;
+	margin: auto;
+}
+
+.content{
+	margin: 25px auto auto auto;
+	position: relative;
+	overflow: hidden;
+}
+
+.slider h3{
+	text-align: center;
+	font-size: 1.8em;
+}
+
+.slider p{
+	padding: 50px;
+	text-indent: 25px;
+}
+
+.slider2 h3{
+	text-align: center;
+	font-size: 1.8em;
+}
+
+.slider2 p{
+	padding: 50px;
+	text-indent: 25px;
+}
+
+/*########## Landing Page ##########*/
+#landing{
+	background-image: url(../img/back.jpg);
+	height: 100vh;
+	position: relative;
+	background-size: cover;
+	background-position: center;
+}
+
+/*########## Navigation Bar ##########*/
+.navbar{
+	position: relative;
+	z-index: 10;
+	text-align: center;
+}
+
+.nav_menu{
+	background-color: rgba(0,0,0,0.7);
+	height: 100vh;
+	width: 100%;
+	position: fixed;
+	left: 0;
+	transform-origin: top right;
+	transition: transform 0.35s ease-in-out;
+	transform:rotate(-90deg);
+	z-index: 10;
+
+}
+
+.nav_menu-rotate{
+	transform: rotate(0deg);
+}
+
+#menu-btn{
+	position: fixed;
+	top: 0;
+	right: 0;
+	float: right;
+	font-size: 18px;
+	font-weight: 700;
+	margin: 10px;
+	text-align: center;
+	z-index: 20;
+	color: black;
+	cursor: pointer;
+}
+
+#menu-btn:hover{
+	color: white;
+}
+
+#hamburger, 
+#hamburger:before,
+#hamburger:after {
+  cursor: pointer;
+  border-radius: 1px;
+  height: 5px;
+  width: 35px;
+  background: white;
+  position: absolute;
+  display: block;
+  content: '';
+  top: 10px;
+
+}
+#hamburger:before {
+  top: -10px;
+}
+#hamburger:after {
+  bottom: -10px; 
+}
+#menu{
+	margin-left: -5px;
+}
+
+.nav_corner{
+    width: 170px;
+    height: 170px;
+    background-color: #23c4eb;
+    right: -85px;
+    top: -85px;
+    cursor: pointer;
+    z-index: 15;
+    position: fixed;
+    transform: rotate(45deg);
+}
+
+.nav_corner:hover + #menu-btn{
+	color: white;
+}
+
+#nav_links{
+	padding: 0;
+	list-style-type: none;
+	display: inline-block;
+	top: calc(50% - 125px);
+	position: absolute;
+	left: calc(50% - 82.5px);
+
+}
+
+#nav_links li a{
+	color: white;
+	text-decoration: none;
+	font-size: 35px;
+	font-weight: 900;
+	line-height: 50px;
+}
+
+#nav_links li a:hover{
+	color: #23c4eb;
+}
+
+
+/*########## Hi ##########*/
+#hi{
+	margin: auto;
+	width: 50%;
+	min-width: 275px;
+}
+
+#hello{
+	font-size: 26px;
+	margin: auto;
+	color: white;
+	text-align: center;
+	position: absolute;
+	top: 45%;
+	width: 100%;
+}
+
+/*########## About ##########*/
+#about{
+	height: 100vh;
+	background-color: #f8ffff;
+}
+/*########## Design ##########*/
+#design{
+	height: 100vh;
+	background-color: #f5f4f0;
+}
+/*########## Program ##########*/
+#program{
+	height: 100vh;
+	background-color: #f8ffff;
+}
+/*########## Contact ##########*/
+#contact{
+	height: 100vh;
+	background-color: #f5f4f0;
+}
+
+#icons{
+	margin-top: 50px;
+	text-align: center;
+}
+
+#icons img{
+	padding: 25px;
+	display: inline-block;
+	margin: 150px 75px 0px 75px;
+	border-bottom: 4px solid transparent;
+}
+
+#icons img:hover{
+	border-bottom: 4px solid #23c4eb;
+	cursor: pointer;
+}
+
+/*########## Slider ##########*/
+.slider{
+	overflow: hidden;
+}
+
+.slider ul{
+	list-style-type: none;
+	margin-left: 0;
+	padding: 0;
+	margin: 0;
+	width: 400%; 
+	/*width = 100% x number of elements*/
+}
+
+.slider li{
+	float: left;
+	width: 25%;
+	height: 700px;
+	background: white;
+}
+
+.slider2 ul{
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+	margin-left: 0;
+	width: 500%; 
+}
+
+.slider2 li{
+	float: left;
+	width: 20%;
+	height: 700px;
+	background: white;
+}
+
+.slider img{
+	width: 100%;
+	display: block;
+	margin: auto;
+}
+
+.slider2 img{
+	width: 100%;
+	display: block;
+	margin: auto;
+}
+
+.detail{
+	position: absolute;
+	width: 170px;
+    height: 170px;
+    background: -webkit-linear-gradient(white,#23c4eb);
+    right: -85px;
+    top: -85px;
+    cursor: pointer;
+    transform: rotate(45deg);
+}
+
+.more_detail{
+	width: 25%;
+	position: absolute;
+	bottom: 15px;
+	left: calc(50% - 15px);
+	transform: rotate(-45deg);
+}
+
+.link{
+	position: absolute;
+	width: 170px;
+    height: 170px;
+    background: -webkit-linear-gradient(#23c4eb,white);
+    left: -85px;
+    bottom: -85px;
+    cursor: pointer;
+    transform: rotate(45deg);
+}
+
+.link:hover + .anchor{
+	transform: rotate(-45deg);
+}
+
+.anchor{
+	width: 30%;
+	position: absolute;
+	top: 10px;
+	left: calc(50% - 25px);
+	transform: rotate(45deg);
+}
+
+.anchor:hover{
+	transform: rotate(-45deg);
+}
+
+/* RESPONSIVE ARROWS */
+[class^=arr-]{
+  border:       solid #23c4eb;
+  border-width: 0 .2em .2em 0;
+  display:      inline-block;
+  padding:      .20em;
+}
+.arr-right {
+	transform:rotate(-45deg);
+	position: absolute;
+	right: 10px;
+	top: 50%;
+	font-size: 50px;
+}
+.arr-left  {
+	transform:rotate(135deg);
+	position: absolute;
+	font-size: 50px;
+	left: 10px;
+	top:50%;
+}
+
+.arr-right:hover{
+	cursor: pointer;
+	border-color: #1c9cbc;
+}
+
+.arr-left:hover{
+	cursor: pointer;
+	border-color: #1c9cbc;
+}
+.arr-right2 {
+	transform:rotate(-45deg);
+	position: absolute;
+	right: 10px;
+	top: 50%;
+	font-size: 50px;
+}
+.arr-left2  {
+	transform:rotate(135deg);
+	position: absolute;
+	font-size: 50px;
+	left: 10px;
+	top:50%;
+}
+
+.arr-right2:hover{
+	cursor: pointer;
+	border-color: #1c9cbc;
+}
+
+.arr-left2:hover{
+	cursor: pointer;
+	border-color: #1c9cbc;
+}
